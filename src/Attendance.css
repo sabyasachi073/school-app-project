@@ -1,0 +1,114 @@
+.attendance {
+  padding: 1.5rem 1.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -50px;
+
+}
+
+.attendance__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.attendance__headerInfo > h1 {
+  font-size: 1.125rem;
+}
+
+.attendance__headerInfo > p {
+  font-size: 0.835rem;
+  color: #a7a7a9;
+  padding-top: 0.5rem;
+}
+
+.attendance__headerIcon {
+  color: #045de9;
+}
+
+.attendance__info {
+  padding-top: 3.5rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.progressbar {
+  width: 12.5rem;
+}
+
+.progressbar__text {
+  padding-top: 0.1rem;
+  text-align: center;
+}
+
+.progressbar__text > p {
+  padding: 0.6rem 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #808191;
+}
+
+.progressbar__text > h3 {
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 52px;
+  letter-spacing: -0.5px;
+}
+
+.attendance__percentage {
+  padding-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.attendance__percentageInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.attendance__present {
+  color: #11b826;
+}
+
+.attendance__absent {
+  color: #ee5c51;
+}
+
+.attendance__expand {
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    font-size: 0.94rem;
+    cursor: pointer;
+    transform: translateX(0.6rem) !important;
+    transition: all 0.25s ease-in !important;
+}
+
+.attendance__expandIcon{
+    transition: all 0.25s ease-in !important;
+}
+
+.attendance__expand:hover{
+    color: #045de9;
+}
+
+.attendance__expand:hover .attendance__expandIcon{
+    transform: translateX(10px) !important;
+    color: #045de9;
+}
+

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.calendar {
+  padding: 1.44rem 0;
+  padding-top: 0.9rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  width: 35%;
+  align-items: center;
+  margin-left: 3rem;
+  border-radius: 30px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -50px;
+}
+
+.calendar {
+  font-size: 16px;
+  font-weight: 600;
+  /* letter-spacing: -0.5px; */
+}
+
+.calendar__header {
+  background-color: #ffffff;
+  padding: 0.7rem 0.8rem;
+  padding-left: 1.1rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #11142d;
+  width: 95%;
+  font-size: 0.75rem;
+}
+
+.calendar__headerIcon {
+  color: #045de9;
+}
+
+.react-calendar {
+  border: 0 !important;
+  width: 95% !important;
+  /* width: max-content !important; */
+}
+
+abbr[title] {
+  text-decoration: none !important;
+  color: #a7a7a9 !important;
+}
+
+.react-calendar__navigation {
+  display: inline-block !important;
+  margin-bottom: 0.7rem !important;
+  /* font-size: 5em !important; */
+}
+
+.react-calendar__navigation button:enabled:focus {
+  background-color: transparent !important;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: transparent !important;
+  color: #e6e6e6 !important;
+}
+
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__label__labelText {
+  color: #a7a7a9 !important;
+}
+
+.react-calendar__viewContainer {
+  /* padding: 0 2.7rem !important; */
+  /* width: max-content; */
+  padding-left: 0.6rem !important;
+}
+
+.react-calendar__tile--active {
+  /* padding: 0.2rem; */
+  /* background: #fd3667 !important; */
+  background: #045de9 !important;
+  border-radius: 15px;
+}
+
+.react-calendar__tile--now {
+  border-radius: 15px;
+}
+
+.react-calendar button:enabled:hover {
+  border-radius: 15px;
+}
+
+.calendar__expand {
+  margin-left: auto;
+  padding-right: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  width: fit-content;
+  font-size: 0.94rem;
+  font-weight: 500;
+  line-height: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease-in !important;
+}
+
+.calendar__expandIcon{
+    transition: all 0.25s ease-in !important;
+}
+
+.calendar__expand:hover{
+    color: #045de9;
+}
+
+.calendar__expand:hover .calendar__expandIcon{
+    transform: translateX(10px) !important;
+    color: #045de9;
+}
+
