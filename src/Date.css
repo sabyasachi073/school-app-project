@@ -1,0 +1,22 @@
+.date__container {
+    color: #393647;
+    width: 45px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    border-radius: 25px;
+    padding: 12px 9px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.date__container.selected {
+    background: #045de9;
+    color: #ffffff;
+    /* font-weight: 600; */
+    text-align: center;
+}
+
+.date {
+    padding-bottom: 5px;
+}

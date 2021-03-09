@@ -3,11 +3,10 @@ import Menu from "./Menu";
 import moment from "moment";
 import "./Home.css";
 import Holiday from "./Holiday";
-import Attendance from "./Attendance";
-import SearchIcon from "@material-ui/icons/Search";
-import NotificationsOutlinedIcon from "@material-ui/icons/NotificationsOutlined";
+import Home__attendance from "./Home__attendance";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import Calendar from "./HomeCalendar";
+import Search from "./Search";
 
 function Home() {
   return (
@@ -22,21 +21,7 @@ function Home() {
             <h2>{moment().format("ddd, D MMMM")}</h2>
             <h1>Good Morning, Sir.</h1>
           </div>
-          <div className="home__headerRight">
-            <div className="home__search">
-              <SearchIcon className="home__searchIcon" />
-              <input
-                type="text"
-                name="home__input"
-                placeholder="Search"
-                className="home__input"
-              />
-            </div>
-            <button className="home__notification">
-              <NotificationsOutlinedIcon className="home__notificationIcon" />
-              <p className="home__notificationCount">2</p>
-            </button>
-          </div>
+          <Search page="home"/>
         </div>
         {/* Home Header ends */}
 
@@ -55,7 +40,7 @@ function Home() {
 
         {/* Home Bottom starts */}
         <div className="home__bottom">
-          <Attendance />
+          <Home__attendance />
           <Calendar />
         </div>
         {/* Home Bottom ends */}

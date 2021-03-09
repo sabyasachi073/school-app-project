@@ -18,9 +18,6 @@ function HomeCalendar() {
         value={value}
         prev2Label={null}
         next2Label={null}
-        // formatShortWeekday={(locale, date) => formatDate(date, 'dd')}
-        // formatYear = {formatDate(date, 'YYYY')}
-        // formatShortWeekday
       />
       <div className="calendar__expand">
           Expand <ChevronRightIcon className="calendar__expandIcon" />

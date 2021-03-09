@@ -17,6 +17,7 @@ import FlagOutlinedIcon from "@material-ui/icons/FlagOutlined";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import UnfoldMoreIcon from "@material-ui/icons/UnfoldMore";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,6 +39,8 @@ const profile__avatar = function ImageAvatars() {
 };
 
 function Menu({ button__active }) {
+const history = useHistory();
+
   return (
     <div className="menu__container">
       <div className="menu">
@@ -50,7 +53,10 @@ function Menu({ button__active }) {
         </div>
         {/* : "" */}
         <div className="menu__buttons">
-          <Button variant="contained" className={button__active === "home"&&"active"}>
+          <Button
+            variant="contained"
+            className={button__active === "home" && "active"} onClick={() => history.push("./")}
+          >
             <HomeRoundedIcon className="menu__buttonIcons" />
             Home
           </Button>
@@ -58,10 +64,14 @@ function Menu({ button__active }) {
             <AssignmentOutlinedIcon className="menu__buttonIcons" />
             Notice Board
           </Button>
-          <Button variant="contained">
+
+          <Button
+            variant="contained" className={button__active === "attendance" && "active"} onClick={() => history.push("./attendance")}
+          >
             <CalendarTodayOutlinedIcon className="menu__buttonIcons" />
             Attendance
           </Button>
+
           <Button variant="contained">
             <ReceiptRoundedIcon className="menu__buttonIcons" />
             Fees Details

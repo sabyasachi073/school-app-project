@@ -1,173 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .home {
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-}
-.home__mainPage {
-    background-color: #FCFCFC;
-    padding: 2.94rem 2.125rem;
-    flex: 1;
-    padding-right: 1.5rem;
-    padding-bottom: 1.7rem;
+  display: flex;
+  font-family: "Poppins", sans-serif;
 }
 
-.home__header{
-    display: flex;
+/* Home main page starts */
+.home__mainPage {
+  background-color: #fcfcfc;
+  padding: 2.94rem 2.125rem;
+  flex: 1;
+  padding-right: 1.5rem;
+  padding-bottom: 1.7rem;
+}
+
+/* Home header starts */
+.home__header {
+  display: flex;
 }
 
 .home__headerLeft > h2 {
-    font-weight: 500;
-    width: 50%;
+  font-weight: 500;
+  width: 50%;
 }
 
 .home__headerLeft > h1 {
-    font-size: 40px;
-font-weight: 600;
-}
-
-.home__headerRight {
-    padding: 0 3.5rem;
-    padding-left: 9rem;
-    padding-bottom: 1.75rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    width: 50%;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .home__search {
-    display: flex;
-    align-items: center;
+    padding-bottom: 1.75rem;
 }
+/* Home header ends */
 
-
-.home__input {
-    margin-left: 1rem;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-
-.home__input::placeholder{
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.home__notification {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    padding: 0.45rem 0.55rem;
-    border-radius: 999px;
-    position: relative;
-    box-shadow: rgb(0 0 0 / 7%) 5px 4px 20px;
-    cursor: pointer;
-}
-
-.home__notificationIcon{
-    font-size: 2rem !important;
-    font-weight: 400 !important;
-    transition: all .2s ease-in !important;
-}
-
-.home__notification:hover .home__notificationIcon {
-    color: #045de9;
-    animation: shake 0.5s;
-    animation-iteration-count: 2;
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(-5deg);  
-    }
-    20% {
-        transform: rotate(-10deg);  
-    }
-    30% {
-        transform: rotate(-15deg);  
-    }
-    40% {
-        transform: rotate(-10deg);  
-    }
-    45% {
-        transform: rotate(-5deg);  
-    }
-    50% {
-        transform: rotate(0deg);  
-    }
-    55% {
-        transform: rotate(5deg);  
-    }
-    60% {
-        transform: rotate(10deg);  
-    }
-    70% {
-        transform: rotate(15deg);  
-    }
-    80% {
-        transform: rotate(10deg);  
-    }
-    90% {
-        transform: rotate(5deg);  
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-.home__notificationCount {
-    position: absolute;
-    top: -3.5px;
-    right: -5px;
-    background-color: #FF754C;
-    color: #ffffff;
-    padding: 0.28rem 0.49rem;
-    border-radius: 999px;
-    font-size: 12px;
-}
-
+/* Home holiday starts */
 .home__holiday {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.82rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.82rem;
 }
 
 .home__holidayList {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .home__holidayButton {
-    margin-left: 1.5rem;
-    padding: 0.4rem 0.5rem;
-    background-color: transparent;
-    /* color: #A3A3A5; */
-    color: #07A1F3;
-    border-radius: 999px;
-    border: 2px solid #a3a3a560;
-    outline: 0;
-    transition: all 0.2s linear;
+  margin-left: 1.5rem;
+  padding: 0.4rem 0.5rem;
+  background-color: transparent;
+  /* color: #A3A3A5; */
+  color: #07a1f3;
+  border-radius: 999px;
+  border: 2px solid #a3a3a560;
+  outline: 0;
+  transition: all 0.2s linear;
 }
 
 .home__holidayButton:hover {
-    cursor: pointer;
-    border-color: #07A1F3;
-    color: #a3a3a560;
+  cursor: pointer;
+  border-color: #07a1f3;
+  color: #a3a3a560;
 }
 .home__holidayIcon {
-    font-size: 2.5rem !important;
+  font-size: 2.5rem !important;
 }
+/* Home holiday ends */
 
 .home__bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
 }

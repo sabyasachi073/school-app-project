@@ -1,73 +1,119 @@
-import React from "react";
+import React, { useState } from "react";
+import Menu from "./Menu";
+import Search from "./Search";
 import "./Attendance.css";
-import CalendarTodayOutlinedIcon from "@material-ui/icons/CalendarTodayOutlined";
-import {
-  CircularProgressbarWithChildren,
-  buildStyles,
-} from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-
-const percentage = 80;
+import Dropdown from "./Dropdown";
+import Date from "./Date";
 
 function Attendance() {
+  const [classValue, setClassValue] = useState(null);
+  const [section, setSection] = useState(null);
+  const [month, setMonth] = useState(null);
+  const [session, setSession] = useState(null);
+  const [date, setDate] = useState(0);
+
+  const day = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const startDay= 0;
+  const dateArr = [];
+  
+  for (var i = 0; i < 15; i++) {
+    dateArr.push(
+      <Date
+        date={i+1}
+        day={day[(startDay+i)%day.length]}
+        value={date}
+        onChange={(val) => setDate(val)}
+      />
+    );
+  }
+
   return (
     <div className="attendance">
-      {/* Attendance Hader starts */}
-      <div className="attendance__header">
-        <div className="attendance__headerInfo">
-          <h1>Attendance</h1>
-          <p>Today Overall Attendance</p>
-        </div>
-        <CalendarTodayOutlinedIcon className="attendance__headerIcon" />
-      </div>
-      {/* Attendance Header ends */}
-
-      {/* Attendence Information starts */}
-      <div className="attendance__info">
-
-        {/* Progressbar starts */}
-        <div className="progressbar">
-          <CircularProgressbarWithChildren
-            value={80}
-            styles={buildStyles({
-              pathColor: "#11B826",
-              trailColor: "#EE5C51",
-              strokeLinecap: "butt",
-              rotation: 1 + (1 - percentage / 100) / 2,
-            })}
-          >
-            <div className="progressbar__text">
-              <p>Total Students Present</p>
-              <h3>1024</h3>
-            </div>
-          </CircularProgressbarWithChildren>
-        </div>
-        {/* Progressbar ends */}
-
-        {/* Attendance Percentage starts */}
-        <div className="attendance__percentage">
-          <div className="attendance__percentageInfo">
-            <p>Present (%)</p>
-            <p className="attendance__present">98%</p>
+      <Menu button__active="attendance" />
+      <div className="attendance__mainPage">
+        <div className="attendance__header">
+          <div className="attendance__headerLeft">
+            <h1>Attendance</h1>
           </div>
-          <div className="attendance__percentageInfo">
-            <p>Absent (%)</p>
-            <p className="attendance__absent">20%</p>
-          </div>
-          <div className="attendance__percentageInfo">
-            <p>Absent</p>
-            <p className="attendance__absent">214</p>
-          </div>
+          <Search />
         </div>
-        {/* Attendance Percentage ends */}
-      </div>
-      {/* Attendance Information ends */}
-      <div className="attendance__expand">
-        Expand <ChevronRightIcon className="attendance__expandIcon"/>
+
+        <div className="attendance__dropdowns">
+          <Dropdown
+            title="Class"
+            dropdownOptions={[
+              "LKG",
+              "UKG",
+              "I",
+              "II",
+              "III",
+              "IV",
+              "V",
+              "VI",
+              "VII",
+              "VIII",
+              "IX",
+              "X",
+              "XI",
+              "XII",
+            ]}
+            value={classValue}
+            onChange={(val) => setClassValue(val)}
+          />
+          <Dropdown
+            title="Section"
+            dropdownOptions={["A", "B", "C", "D", "E"]}
+            value={section}
+            onChange={(val) => setSection(val)}
+          />
+          <Dropdown
+            title="Month"
+            dropdownOptions={[
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December",
+            ]}
+            value={month}
+            onChange={(val) => setMonth(val)}
+          />
+          <Dropdown
+            title="Session"
+            dropdownOptions={[
+              "2010-2011",
+              "2011-2012",
+              "2012-2013",
+              "2013-2014",
+              "2014-2015",
+              "2015-2016",
+              "2016-2017",
+              "2017-2018",
+              "2018-2019",
+              "2019-2020",
+              "2020-2021",
+              "2021-2022",
+            ]}
+            value={session}
+            onChange={(val) => setSession(val)}
+          />
+        </div>
+
+        <div className="attendance__date">
+          {dateArr}
+        </div>
       </div>
     </div>
   );
 }
+
+// onChange={val => setValue(val)} - This will set the value in 'Value' that was selected earlier in the dropdown
 
 export default Attendance;
