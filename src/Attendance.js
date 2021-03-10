@@ -7,15 +7,16 @@ import Date from "./Date";
 import Student from "./Student";
 
 function Attendance() {
-  const [classValue, setClassValue] = useState(null);
-  const [section, setSection] = useState(null);
-  const [month, setMonth] = useState(null);
-  const [session, setSession] = useState(null);
-  const [date, setDate] = useState(0);
-  const [present, setPresent] = useState([]);
+  const [classValue, setClassValue] = useState(null); // To store the selected value of Class in dropdown
+  const [section, setSection] = useState(null); // To store the selected value of Section in dropdown
+  const [month, setMonth] = useState(null); // To store the selected value of Month in dropdown
+  const [session, setSession] = useState(null); // // To store the selected value of Session in dropdown
+  const [date, setDate] = useState(0); // To store the selected value of Date in Attendence page
+  const [present, setPresent] = useState([]); // To store the attendance for each period of student in Attendence page
 
   const totalPeriod = 8;
 
+  // Options for the dropdown list
   const classArr = [
     "LKG",
     "UKG",
@@ -62,7 +63,9 @@ function Attendance() {
     "2021-2022",
   ];
 
-  const day = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  // For date selection field 
+  const day = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const startDay = 0;
   const dateArr = [];
 
@@ -77,8 +80,11 @@ function Attendance() {
     );
   }
 
+
   // For the pesent absent field of student
   let createPresent = [];
+
+  // For setting the initial values of "present" state(line 15)
   for (var j = 1; j <= totalPeriod; j++) {
     createPresent = [
       ...createPresent,
@@ -90,7 +96,7 @@ function Attendance() {
   }
 
   useEffect(() => {
-    setPresent(createPresent);
+    setPresent(createPresent); // Setting the "present" State initially 
   }, []);
 
   const periods = [];
@@ -109,7 +115,6 @@ function Attendance() {
         name="Abhishek Yadav"
         value={present}
         onChange={setPresent}
-        // onChange={val=> setPresent((present[period-1].present) = val)}
       />
     );
   }

@@ -13,7 +13,7 @@ const percentage = 80;
 function Home__attendance() {
   return (
     <div className="home__attendance">
-      {/* Attendance Hader starts */}
+      {/* Attendance Header starts */}
       <div className="home__attendance__header">
         <div className="home__attendance__headerInfo">
           <h1>Attendance</h1>
@@ -32,7 +32,7 @@ function Home__attendance() {
             value={80}
             styles={buildStyles({
               pathColor: "#11B826",
-              trailColor: "#EE5C51",
+              trailColor: "#d00d0d",
               strokeLinecap: "butt",
               rotation: 1 + (1 - percentage / 100) / 2,
             })}

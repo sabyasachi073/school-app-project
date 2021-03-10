@@ -6,7 +6,8 @@ import DateRangeOutlinedIcon from "@material-ui/icons/DateRangeOutlined";
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
 function HomeCalendar() {
-  const [value, onChange] = useState(new Date());
+  const [value, onChange] = useState(new Date()); // Holds the value(date) selected by the user. It initially hold the current date
+
   return (
     <div className="calendar">
       <div className="calendar__header">

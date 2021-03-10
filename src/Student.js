@@ -3,8 +3,9 @@ import "./Student.css";
 import { Button } from "@material-ui/core";
 
 function Student({ period, ordinal__indicator, name, value, onChange }) {
-  const [presentValue, setPresentValue] = useState(false);
+  const [presentValue, setPresentValue] = useState(false); // State to moniter and store the value(Present/Absent) selected by the user
 
+  // Assigns the selected value to the main "present" state in Atendance.js
   function handleClick() {
     onChange(prev => [
       ...prev,

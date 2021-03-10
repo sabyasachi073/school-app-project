@@ -64,11 +64,6 @@
   font-size: 2.2rem !important;
 }
 
-/* .menu__divider {
-  padding-right: 40px;
-  cursor: pointer;
-} */
-
 .menu__account {
   display: flex;
   justify-content: space-between;
