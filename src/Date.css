@@ -1,7 +1,11 @@
 .date__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #393647;
     width: 45px;
-    text-align: center;
+    height: 67px;
     font-size: 14px;
     line-height: 19px;
     border-radius: 25px;
@@ -10,11 +14,14 @@
     cursor: pointer;
 }
 
-.date__container.selected {
-    background: #045de9;
+.date__container.selected, .date__container.selected:active {
+    background: #045de9 !important;
     color: #ffffff;
-    /* font-weight: 600; */
     text-align: center;
+}
+
+.date__container:hover {
+    background-color: #e6e6e6
 }
 
 .date {

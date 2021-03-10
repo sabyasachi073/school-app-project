@@ -10,7 +10,7 @@
   padding: 2.94rem 2.125rem;
   flex: 1;
   padding-right: 1.5rem;
-  padding-bottom: 1.7rem;
+  padding-bottom: 0.8rem;
 }
 
 .attendance__header {
@@ -34,4 +34,5 @@
   display: flex;
   align-items: center;
   padding-top: 2.6rem;
+  padding-bottom: 2rem;
 }

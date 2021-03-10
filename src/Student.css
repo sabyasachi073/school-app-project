@@ -1,0 +1,90 @@
+.student__container {
+    width: 48%;
+}
+
+.student {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  background-color: #09c6f9;
+  color: #ffffff;
+  padding: 6px;
+  height: 55px;
+  width: 55px;
+  border-radius: 99px;
+}
+
+.period > .period__number {
+  padding-top: 0.2rem;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  letter-spacing: 0.5px;
+}
+
+.period > p {
+  font-weight: 500;
+  font-size: 8.5px;
+}
+
+.student__attendance {
+  margin-left: auto;
+}
+.student__attendance > .student__attendanceButton {
+  margin: 0 0.5rem;
+  width: 100px;
+  border-radius: 99px !important;
+  font-size: 0.9rem !important;
+  text-transform: inherit !important;
+  border: 1.5px solid #04041563;
+  color: #04041563;
+}
+
+.student__present:hover {
+    /* background-color: #c9c5c5 !important; */
+    background-color: #0ac10a7c !important;
+    color: #ffffff !important;
+    border-color: #0ac10a !important;
+    border-color: #ffffff !important;
+}
+
+.student__absent:hover {
+    /* background-color: #c9c5c5 !important; */
+    background-color: #d00d0d81 !important;
+    color: #ffffff !important;
+    border-color: #d00d0d !important;
+    border-color: #ffffff !important;
+}
+
+.student__present.selected {
+  background-color: #0ac10a !important;
+  color: #ffffff !important;
+  border: 0 !important;
+}
+
+.student__absent.selected {
+  background-color: #d00d0d !important;
+  color: #ffffff !important;
+  border: 0 !important;
+}
+
+.student__name {
+  background: rgba(211, 224, 234, 0.5);
+  width: 181px;
+  height: 48px;
+  margin: 0 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 10px;
+  /* font-weight: 600;
+  color: #000000cb; */
+}
