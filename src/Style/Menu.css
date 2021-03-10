@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 .menu__container {
   display: flex;
   border-right: 2px solid #b9b9bb;
   width: fit-content;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .menu {
@@ -72,12 +72,12 @@
   padding-top: 3.4rem;
 }
 
-.avatar{
-    margin-right: 8px;
+.avatar {
+  margin-right: 8px;
 }
 
-.menu__accountDetails{
-    margin-right: 32px;
+.menu__accountDetails {
+  margin-right: 32px;
 }
 
 .menu__accountName {
@@ -87,9 +87,9 @@
   color: #11142d;
 }
 
-.menu__accountProfile{
-    font-weight: 600;
-font-size: 13px;
-line-height: 18px;
-color: #808191;
+.menu__accountProfile {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  color: #808191;
 }

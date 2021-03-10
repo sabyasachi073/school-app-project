@@ -74,11 +74,15 @@ abbr[title] {
   padding-left: 0.6rem !important;
 }
 
-.react-calendar__tile--now, .react-calendar__tile--active, .react-calendar__tile--range, .react-calendar__month-view__days__day{
+.react-calendar__tile--now,
+.react-calendar__tile--active,
+.react-calendar__tile--range,
+.react-calendar__month-view__days__day {
   padding: 0.8rem 0 !important;
 }
 
-.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__year-view__months__month{
+.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__year-view__months__month,
+.react-calendar__tile.react-calendar__tile--hasActive.react-calendar__decade-view__years__year {
   border-radius: 15px !important;
 }
 

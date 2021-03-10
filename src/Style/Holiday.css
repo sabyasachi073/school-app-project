@@ -1,18 +1,17 @@
 .holiday {
-    padding: 1rem 1.5rem;
-    padding-bottom: 0.65rem;
-    width: 20.56rem;
-    background: linear-gradient(135deg, #1ff7fd -40.61%, #0464ea);
-    color: #ffffff;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    transition: all 0.1s ease-in;
+  padding: 1rem 1.5rem;
+  padding-bottom: 0.65rem;
+  width: 20.56rem;
+  background: linear-gradient(135deg, #1ff7fd -40.61%, #0464ea);
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  transition: all 0.1s ease-in;
 }
 
 .holiday:hover {
   transform: scale(1.02);
 }
-
 
 .holiday__header {
   display: flex;

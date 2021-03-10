@@ -1,5 +1,5 @@
 import React from "react";
-import "./Menu.css";
+import "./Style/Menu.css";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
@@ -119,7 +119,7 @@ function Menu({ button__active }) {
             Account
           </Button>
         </div>
-        
+
         <div className="menu__account">
           <div className="avatar">{profile__avatar()}</div>
           <div className="menu__accountDetails">

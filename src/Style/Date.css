@@ -1,0 +1,30 @@
+.date__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #393647;
+  width: 45px;
+  height: 67px;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 25px;
+  padding: 12px 9px;
+  margin-left: 11px;
+  cursor: pointer;
+}
+
+.date__container.selected,
+.date__container.selected:active {
+  background: #045de9 !important;
+  color: #ffffff;
+  text-align: center;
+}
+
+.date__container:hover {
+  background-color: #e6e6e6;
+}
+
+.date {
+  padding-bottom: 5px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "./Menu";
 import moment from "moment";
-import "./Home.css";
+import "./Style/Home.css";
 import Holiday from "./Holiday";
 import Home__attendance from "./Home__attendance";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
@@ -21,7 +21,7 @@ function Home() {
             <h2>{moment().format("ddd, D MMMM")}</h2>
             <h1>Good Morning, Sir.</h1>
           </div>
-          <Search page="home"/>
+          <Search page="home" />
         </div>
         {/* Home Header ends */}
 
@@ -44,7 +44,6 @@ function Home() {
           <Calendar />
         </div>
         {/* Home Bottom ends */}
-
       </div>
       {/* Home Main Page ends */}
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Student.css";
+import "./Style/Student.css";
 import { Button } from "@material-ui/core";
 
 function Student({ period, ordinal__indicator, name, value, onChange }) {
@@ -7,10 +7,7 @@ function Student({ period, ordinal__indicator, name, value, onChange }) {
 
   // Assigns the selected value to the main "present" state in Atendance.js
   function handleClick() {
-    onChange(prev => [
-      ...prev,
-      value[(period-1)].present = presentValue
-    ]);
+    onChange((prev) => [...prev, (value[period - 1].present = presentValue)]);
   }
 
   return (

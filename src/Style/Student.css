@@ -1,5 +1,5 @@
 .student__container {
-    width: 48%;
+  width: 48%;
 }
 
 .student {
@@ -48,17 +48,17 @@
 }
 
 .student__present:hover {
-    background-color: #0ac10a7c !important;
-    color: #ffffff !important;
-    border-color: #0ac10a !important;
-    border-color: #ffffff !important;
+  background-color: #0ac10a7c !important;
+  color: #ffffff !important;
+  border-color: #0ac10a !important;
+  border-color: #ffffff !important;
 }
 
 .student__absent:hover {
-    background-color: #d00d0d81 !important;
-    color: #ffffff !important;
-    border-color: #d00d0d !important;
-    border-color: #ffffff !important;
+  background-color: #d00d0d81 !important;
+  color: #ffffff !important;
+  border-color: #d00d0d !important;
+  border-color: #ffffff !important;
 }
 
 .student__present.selected {

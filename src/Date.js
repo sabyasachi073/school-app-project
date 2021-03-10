@@ -1,5 +1,5 @@
 import React from "react";
-import "./Date.css";
+import "./Style/Date.css";
 
 function Date({ date, day, value, onChange }) {
   return (

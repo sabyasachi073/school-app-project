@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Menu from "./Menu";
 import Search from "./Search";
-import "./Attendance.css";
+import "./Style/Attendance.css";
 import Dropdown from "./Dropdown";
 import Date from "./Date";
 import Student from "./Student";
@@ -63,8 +63,7 @@ function Attendance() {
     "2021-2022",
   ];
 
-
-  // For date selection field 
+  // For date selection field
   const day = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const startDay = 0;
   const dateArr = [];
@@ -79,7 +78,6 @@ function Attendance() {
       />
     );
   }
-
 
   // For the pesent absent field of student
   let createPresent = [];
@@ -96,7 +94,7 @@ function Attendance() {
   }
 
   useEffect(() => {
-    setPresent(createPresent); // Setting the "present" State initially 
+    setPresent(createPresent); // Setting the "present" State initially
   }, []);
 
   const periods = [];

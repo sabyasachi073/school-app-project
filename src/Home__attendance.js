@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home__attendance.css";
+import "./Style/Home__attendance.css";
 import CalendarTodayOutlinedIcon from "@material-ui/icons/CalendarTodayOutlined";
 import {
   CircularProgressbarWithChildren,
@@ -25,7 +25,6 @@ function Home__attendance() {
 
       {/* Attendence Information starts */}
       <div className="home__attendance__info">
-
         {/* Progressbar starts */}
         <div className="progressbar">
           <CircularProgressbarWithChildren
@@ -64,7 +63,7 @@ function Home__attendance() {
       </div>
       {/* Attendance Information ends */}
       <div className="home__attendance__expand">
-        Expand <ChevronRightIcon className="home__attendance__expandIcon"/>
+        Expand <ChevronRightIcon className="home__attendance__expandIcon" />
       </div>
     </div>
   );
