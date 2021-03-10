@@ -1,6 +1,6 @@
 # School App with React JS and Firebase
 
-Link to the app- https://messenger-clone-85d04.web.app
+Link to the app- https://school-app-project-b0805.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
